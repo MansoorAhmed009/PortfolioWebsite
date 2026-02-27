@@ -1,5 +1,4 @@
-# Material Informatics Authority Website
-
+# portfolio Website 
 Production-grade personal authority platform built with Next.js App Router, TypeScript, Tailwind, Sanity CMS, Giscus, and Formspree.
 
 ## Highlights
