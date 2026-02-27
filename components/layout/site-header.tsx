@@ -18,7 +18,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-700/40 bg-slate-950/65 backdrop-blur-xl">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 md:px-6">
-        <Link href="/" className="focus-ring text-sm font-semibold tracking-wide text-white">
+        <Link href="/" prefetch={true} className="focus-ring text-sm font-semibold tracking-wide text-white">
           Mansoor Ahmad
         </Link>
 
@@ -28,8 +28,7 @@ export function SiteHeader() {
             return (
               <Link
                 key={item.href}
-                href={item.href}
-                className={cn(
+                href={item.href}                prefetch={true}                className={cn(
                   "focus-ring rounded-lg px-3 py-2 text-sm transition",
                   active ? "bg-slate-800/80 text-cyan-200" : "text-slate-300 hover:bg-slate-800/55 hover:text-white"
                 )}
@@ -43,6 +42,7 @@ export function SiteHeader() {
         <div className="flex items-center gap-3">
           <Link
             href="/contact"
+            prefetch={true}
             className="focus-ring hidden rounded-lg border border-cyan-300/40 bg-cyan-400/10 px-3 py-2 text-xs font-medium text-cyan-100 transition hover:-translate-y-0.5 hover:bg-cyan-300/20 md:inline-flex"
           >
             Let&apos;s Work
@@ -68,6 +68,7 @@ export function SiteHeader() {
                 <Link
                   key={item.href}
                   href={item.href}
+                  prefetch={true}
                   className={cn(
                     "focus-ring rounded-lg px-3 py-2 text-sm transition",
                     active ? "bg-slate-800/80 text-cyan-200" : "text-slate-300 hover:bg-slate-800/60 hover:text-white"

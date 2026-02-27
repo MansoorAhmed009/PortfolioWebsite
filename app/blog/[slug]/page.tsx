@@ -20,6 +20,7 @@ type BlogPostPageProps = {
 };
 
 export const dynamicParams = true;
+export const dynamic = 'force-static';
 export const revalidate = 60; // faster blog post updates
 
 export async function generateStaticParams() {

@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   description: "About the systems-thinking approach, technical strengths, and philosophy behind this Material Informatics practice."
 };
 
+export const dynamic = 'force-static';
+
 export default function AboutPage() {
   return (
     <section className="mx-auto w-full max-w-6xl px-4 pb-12 pt-12 sm:pb-14 sm:pt-14 md:px-6 md:pb-16 md:pt-20">

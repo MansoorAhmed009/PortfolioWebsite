@@ -7,6 +7,7 @@ import { getPosts, getProjects } from "@/lib/sanity/data";
 import { siteConfig } from "@/lib/site-config";
 
 // use a literal value here so Next can statically analyze the export
+export const dynamic = 'force-static';
 export const revalidate = 60; // 1 minute ISR for faster updates
 
 export default async function HomePage() {

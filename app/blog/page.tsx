@@ -13,6 +13,8 @@ export const metadata: Metadata = {
 // export a literal revalidate interval (must be statically analyzable)
 export const revalidate = 60; // faster blog updates
 
+export const dynamic = 'force-static';
+
 export default async function BlogPage() {
   const initialPosts = await getPosts({ limit: 20 });
 

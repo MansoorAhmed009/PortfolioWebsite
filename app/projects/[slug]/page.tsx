@@ -13,6 +13,7 @@ type ProjectDetailPageProps = {
 };
 
 export const dynamicParams = true;
+export const dynamic = 'force-static';
 export const revalidate = 60; // faster project updates
 
 export async function generateStaticParams() {

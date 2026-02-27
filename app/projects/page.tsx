@@ -13,6 +13,8 @@ export const metadata: Metadata = {
 // use a numeric literal so the config export is valid
 export const revalidate = 60; // faster project updates
 
+export const dynamic = 'force-static';
+
 export default async function ProjectsPage() {
   const initialProjects = await getProjects({ limit: 20 });
 

@@ -1,3 +1,5 @@
+"use client";
+
 const particles = [
   { x: "8%", y: "14%", delay: "0.2s", duration: "7.5s" },
   { x: "17%", y: "68%", delay: "1.1s", duration: "8.4s" },
